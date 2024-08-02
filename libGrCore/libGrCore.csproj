@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE;NOMATCHREWRITEDETAIL</DefineConstants>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyTitle>libGr</AssemblyTitle>
+    <Product>libGr</Product>
+    <Company>Universität Karlsruhe, IPD Goos</Company>
+    <Copyright>Copyright © 2003-2023 Universität Karlsruhe, IPD Goos%3b and free programmers</Copyright>
+    <AssemblyVersion>6.7.0.0</AssemblyVersion>
+    <InformationalVersion>GrGen.NET 6.7</InformationalVersion>
+    <FileVersion>6.7.0.0</FileVersion>
+  </PropertyGroup>
+</Project>

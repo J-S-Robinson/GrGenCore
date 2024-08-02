@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyTitle>lgspBackend</AssemblyTitle>
+    <Product>lgspBackend</Product>
+    <Company>Universität Karlsruhe, IPD Goos</Company>
+    <Copyright>Copyright © 2003-2023 Universität Karlsruhe, IPD Goos%3b and free programmers</Copyright>
+    <AssemblyVersion>6.7.0.0</AssemblyVersion>
+    <InformationalVersion>GrGen.NET 6.7</InformationalVersion>
+    <FileVersion>6.7.0.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.9.2" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="8.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libGrCore\libGrCore.csproj" />
+  </ItemGroup>
+</Project>
