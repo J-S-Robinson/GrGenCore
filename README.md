@@ -4,3 +4,4 @@ This is a port of the core libaries of [GrGen.NET](https://github.com/ejaku/grge
 
 The main change is a switch to Roslyn for the runtime assembly compilation, as the old Compiling libraries had been removed from modern .NET.
 
+This work is made available under the LGPL.
